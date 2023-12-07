@@ -55,7 +55,14 @@ func doSubSetSum1(ind int, sum int, arr *[]int, n int, sumArr *[]int) {
 	doSubSetSum1(ind+1, sum, arr, n, sumArr)
 
 }
+```
 
+**Output:**
+```
+Tutorial for SubSetSum 1
+Input Array :  [3 1 2]
+Sum Sub Set Array :  [6 4 5 3 3 1 2 0]
+After Sorting :  [0 1 2 3 3 4 5 6]
 ```
 
 **Python Code**
@@ -74,6 +81,11 @@ arr = [3,1,2]
 sumArr = []
 do_subset_sum1(0,0,arr,len(arr), sumArr)
 print(sumArr)
+```
+
+**Output:**
+```
+[6, 4, 5, 3, 3, 1, 2, 0]
 ```
 
 **Recursion Tree**
