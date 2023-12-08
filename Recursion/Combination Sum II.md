@@ -168,4 +168,4 @@ In summary
 
 ### Recursion Tree
 
-![combinationsum2.png](img/combinationsum2.PNG)
+![combinationsum2.png](img/combinationsum2.png)
