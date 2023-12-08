@@ -90,4 +90,4 @@ print(sumArr)
 
 **Recursion Tree**
 
-![subsetsum1recursiontree.png](subsetsum1recursionstree.png)
+![subsetsum1recursiontree.png](img/subsetsum1recursionstree.png)
