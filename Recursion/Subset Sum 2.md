@@ -122,7 +122,7 @@ print(ans)
 ```
 
 **Recursion Tree**
-![subsetsum2_recursion_tree1](subsetsum2recursiontree1.PNG)
+![subsetsum2_recursion_tree1](subsetsum2recursionstree1.png)
 
 **Additional Example:**
 
@@ -152,4 +152,4 @@ Sum Array :  [[] [1] [1 2] [1 2 2] [1 2 2 2] [1 2 2 2 3] [1 2 2 2 3 3] [1 2 2 3]
 ```
 
 **Recursion Tree**
-![subsetsum2_recursion_tree1](subsetsum2recursiontree2.PNG)
+![subsetsum2_recursion_tree1](subsetsum2recursionstree2.png)
