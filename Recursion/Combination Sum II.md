@@ -66,13 +66,13 @@ func CombinationSum2() {
 	var ans [][]int
 	var ds []int
 	var target int = 4
-	DoCombinationalSum2(0, &arr, target, ds, &ans)
+	DoCombinationSum2(0, &arr, target, ds, &ans)
 
 	fmt.Println("Input : ", arr)
 	fmt.Println("Output : ", ans)
 }
 
-func DoCombinationalSum2(ind int, arr *[]int, target int, ds []int, ans *[][]int) {
+func DoCombinationSum2(ind int, arr *[]int, target int, ds []int, ans *[][]int) {
 	if target == 0 {
 		// (*ans) = append((*ans), ds)
 		dsCopy := make([]int, len(ds))
@@ -91,7 +91,7 @@ func DoCombinationalSum2(ind int, arr *[]int, target int, ds []int, ans *[][]int
 		}
 
 		ds = append(ds, (*arr)[i])
-		DoCombinationalSum2(i+1, arr, target-(*arr)[i], ds, ans)
+		DoCombinationSum2(i+1, arr, target-(*arr)[i], ds, ans)
 		ds = ds[:len(ds)-1]
 
 	}
@@ -109,7 +109,7 @@ Output :  [[1 1 2] [2 2]]
 
 **Python**
 ```python
-def do_combinational_sum2(ind, arr, target, ds, ans):
+def do_combination_sum2(ind, arr, target, ds, ans):
     if target == 0:
         ans.append(ds.copy())
         return
@@ -132,7 +132,7 @@ ds = []
 target = 4
 ans = []
 
-do_combinational_sum2(0, arr, target, ds, ans)
+do_combination_sum2(0, arr, target, ds, ans)
 
 print(ans)
 ```

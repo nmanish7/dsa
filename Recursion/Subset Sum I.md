@@ -1,4 +1,4 @@
-## Subset Sum 1
+## Subset Sum I
 
 **Given a list (arr) of N integers, print sums of all subset in it. Output should be printed in increasing order of sums.**
 

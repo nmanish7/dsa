@@ -21,7 +21,11 @@ In this repository, you'll find solutions to problems from platforms like LeetCo
 The repository is organized by DSA topics, making it easy to navigate and focus on specific concepts. The folder structure looks like this:
 
 - [Recursion](#recursion)
-	- [Subset Sum 1](Recursion/Subset%20Sum%201.md)
+	- [Combination Sum I](Recursion/Combination%20Sum%20I)
+	- [Combination Sum II](Recursion/Combination%20Sum%20II)
+	- [Subset Sum I](Recursion/Subset%20Sum%20I)
+	- [Subset Sum II](Recursion/Subset%20Sum%20II)
+
   
 
 ## How to Use This Repository
