@@ -21,6 +21,9 @@ In this repository, you'll find solutions to problems from platforms like LeetCo
 The repository is organized by DSA topics, making it easy to navigate and focus on specific concepts. The folder structure looks like this:
 
 - [Recursion](#recursion)
+	- [Reverse an array](Recursion/Reverse%20an%20array.md)
+	- [Palindrome](Recursion/Palindrome.md)
+	- [Fibonacci](Recursion/Fibonacci.md)
 	- [Subsequence's](Recursion/Subsequence's.md)
 	- [Get all Subsequence's](Recursion/Get%20all%20subsequence's.md)
 	- [Get first Subsequence](Recursion/Get%20first%20subsequence.md)
