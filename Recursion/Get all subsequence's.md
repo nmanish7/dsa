@@ -35,7 +35,7 @@ import (
 )
 
 func SubSeqSum() {
-	fmt.Println("Tutorial for sub sequences sum")
+	fmt.Println("Tutorial for get all sub sequences sum")
 
 	var arr = []int{1, 2, 1}
 	var n = len(arr)
@@ -71,7 +71,7 @@ func getAllSubsequences(i int, s int, sum int , arr []int, empty_arr *[]int, n i
 ```
 **Output**
 ```
-Tutorial for sub sequences sum
+Tutorial for get all sub sequences sum
 [1 1]
 [2]
 ```
@@ -113,7 +113,7 @@ get_all_subsequences(0, 0, sum, arr, blank_arr, n)
 [2]
 ```
 ### Algorithmic Complexity Analysis
-### Time Complexity:
+#### Time Complexity:
 The time complexity of the provided code can be analyzed as follows:
 
 - **Generating Subsequences:**
@@ -123,7 +123,7 @@ The time complexity of the provided code can be analyzed as follows:
 
 Therefore, the overall time complexity is exponential, \(O(2^n)\), where \(n\) is the length of the array.
 
-### Space Complexity:
+#### Space Complexity:
 The space complexity is influenced by the recursive call stack and the space used for the temporary array (`empty_arr`):
 
 - **Recursive Call Stack:**
