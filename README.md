@@ -24,6 +24,7 @@ The repository is organized by DSA topics, making it easy to navigate and focus 
 	- [Subsequence's](Recursion/Subsequence's.md)
 	- [Get all Subsequence's](Recursion/Get%20all%20subsequence's.md)
 	- [Get first Subsequence](Recursion/Get%20first%20subsequence.md)
+	- [Get count of Subsequence](Recursion/Get%20count%20of%20Subsequence's.md)
 	- [Merge sort algorithm](Recursion/Merge%20Sort%20Algorithm.md)
 	- [Quick sort algorithm](Recursion/Quick%20Sort%20Algorithm.md)
 	- [Combination Sum I](Recursion/Combination%20Sum%20I.md)
