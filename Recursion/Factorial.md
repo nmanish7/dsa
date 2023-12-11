@@ -77,7 +77,7 @@ print(result)
 120
 ```
 ### Algorithmic Complexity Analysis
-### Time Complexity:
+#### Time Complexity:
 The time complexity of the provided code can be analyzed as follows:
 
 - **Recursive Calls:**
@@ -86,7 +86,7 @@ The time complexity of the provided code can be analyzed as follows:
   
 Therefore, the overall time complexity is \(O(n)\), where \(n\) is the input value for which the factorial is calculated.
 
-### Space Complexity:
+#### Space Complexity:
 The space complexity is influenced by the depth of the recursive call stack:
 
 - **Recursive Call Stack:**
