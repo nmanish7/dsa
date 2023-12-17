@@ -39,6 +39,7 @@ The repository is organized by DSA topics, making it easy to navigate and focus 
 	- [Subset Sum II](Recursion/Subset%20Sum%20II.md)
 	- [Permutations - I](Recursion/Permutations%20Approach%20-%20I.md)
 	- [Permutations - II](Recursion/Permutations%20Approach%20-%20II.md)
+	- [N-Queens](Recursion/N-Queens.md)
   
 
 ## How to Use This Repository
