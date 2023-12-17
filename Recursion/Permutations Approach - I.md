@@ -1,5 +1,36 @@
 ## Permutations Approach - I
 
+**Permutations**
+
+A permutation is an arrangement of objects in a specific order. For a set of distinct elements, a permutation is a specific ordering of those elements.
+
+**Example**
+
+Consider the set {1, 2, 3}. The permutations of this set are:
+
+1. [1, 2, 3]
+2. [1, 3, 2]
+3. [2, 1, 3]
+4. [2, 3, 1]
+5. [3, 1, 2]
+6. [3, 2, 1]
+
+**Notation**
+- n! is read as "n factorial."
+
+**Formula**
+The number of permutations of \(n\) distinct elements is given by the factorial of \(n\), denoted as \(n!\):
+
+n! = n x (n - 1) x (n - 2) x ... 3 x 2 x 1
+
+**Example**
+For a set of three distinct elements {A, B, C}, the number of permutations is:
+
+3! = 3 x 2 x 1 = 6
+
+---
+
+
 Given an array `nums` of distinct integers, return all the possible permutations. You can return the answer in any order.
 
 > **Solution using Extra Space Complexity**
