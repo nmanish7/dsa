@@ -219,10 +219,97 @@ Considering other directions (e.g., right, upward diagonals, downward diagonals)
 
 **Python**
 ```python
+def solve(col, board, ans, n):
+    # Base case: All queens are placed successfully
+    if col == n:
+        # ans.append(board.copy())
+
+        # Append a deep copy of the current board to the solutions
+        ans.append([row.copy() for row in board])
+        return
+
+    # Try placing a queen in each row of the current column
+    for row in range(n):
+        if is_safe1(row, col, board, n):
+            # Place queen
+            board[row][col] = "Q"
+            # Recur to place queens in subsequent columns
+            solve(col+1, board, ans, n)
+            # Backtrack: remove queen for other possibilities
+            board[row][col] = "."
+
+
+def is_safe1(row, col, board, n):
+    duprow = row
+    dupcol = col
+
+    # Check Diagonal upper left
+    while row >= 0 and col >= 0:
+        if board[row][col] == "Q":
+            return False
+
+        row -= 1
+        col -= 1
+
+    row = duprow
+    col = dupcol
+
+    # Check Horizontal left
+    while col >= 0:
+        if board[row][col] == "Q":
+            return False
+
+        col -= 1
+
+    row = duprow
+    col = dupcol
+
+    # Check Diagonal lower left
+    while row < n and col >= 0:
+        if board[row][col] == "Q":
+            return False
+
+        row += 1
+        col -= 1
+
+    return True
+
+
+n = 4
+ans = []
+# board = [["."] * n] * n # Problem : creates a list containing n references to the same list, resulting in a shared reference for each row.
+
+# Use a list comprehension to create independent rows
+board = [["."] * n for _ in range(n)]
+
+
+solve(0, board, ans, n)
+
+print(ans)
+print()
+
+
+# Print each solution in a visually understandable format
+for board in ans:
+    for row in board:
+        print(row)
+    print()
 ```
 
 **Output**
 ```python
+[[['.', '.', 'Q', '.'], ['Q', '.', '.', '.'], ['.', '.', '.', 'Q'], ['.', 'Q', '.', '.']], [['.', 'Q', '.', '.'], ['.', '.', '.', 'Q'], ['Q', '.', '.', '.'], ['.', '.', 'Q', '.']]]
+
+['.', '.', 'Q', '.']
+['Q', '.', '.', '.']
+['.', '.', '.', 'Q']
+['.', 'Q', '.', '.']
+
+['.', 'Q', '.', '.']
+['.', '.', '.', 'Q']
+['Q', '.', '.', '.']
+['.', '.', 'Q', '.']
+
 ```
 ### Algorithmic Complexity Analysis
 
@@ -239,3 +326,5 @@ Considering other directions (e.g., right, upward diagonals, downward diagonals)
 Note: The precise analysis of space complexity may vary depending on the specific implementation details and language-specific factors.
 
 ### Recursion Tree
+
+![nqueens1.png](img/nqueens1.png)
